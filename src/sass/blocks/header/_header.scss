@@ -1,0 +1,94 @@
+.header {
+    background-color: $white;
+    z-index: 2;
+    &__top {
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 170px;
+            width: 100%;
+
+            a {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .top_menu {
+            &__list {
+                display: flex;
+                justify-content: center;
+                gap: 27px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            &__link {
+                text-decoration: none;
+                color: $gray;
+
+                &.active {
+                    color: $blue-700;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px; 
+
+            .call {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                &__position {
+                    span, a {
+                        font-weight: 600;
+                    }
+                    a {
+                        color: $blue-700;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .callback {
+                a {
+                    color: $blue-700;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    letter-spacing: 0.05em;
+                }
+            }
+            .position {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 10px;
+                }
+                select {
+                    appearance: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

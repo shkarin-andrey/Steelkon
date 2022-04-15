@@ -1,0 +1,23 @@
+.intro {
+    position: relative;
+    padding: 80px 0;
+    min-height: calc(100vh - 140px);
+    overflow: hidden;
+    background: url('../img/intro/intro-cube.png') left center no-repeat;
+
+    &__content {
+        width: 50%;
+    }
+
+    &__descr {
+        max-width: 570px;
+        margin: 30px 0;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: -85px;
+    }
+}

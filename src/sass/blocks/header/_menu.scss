@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    align-items: center;
+
+    background: $blue;
+    min-height: 60px;
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 80px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
