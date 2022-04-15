@@ -87,6 +87,13 @@
                     border: none;
                     outline: none;
                     cursor: pointer;
+                    font-weight: 700;
+                    background-color: $white;
+                    color: $gray;
+
+                    option {
+                        color: #000;
+                    }
                 }
             }
         }
